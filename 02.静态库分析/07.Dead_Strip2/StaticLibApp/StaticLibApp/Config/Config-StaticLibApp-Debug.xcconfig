@@ -1,0 +1,16 @@
+//
+//  Config_StaticLibApp_Debug.xcconfig
+//  StaticLibApp
+//
+//  Created by zhoushuai on 2021/10/5.
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//-Xlinker -noall_load：不全部加载，默认生效；
+//-Xlinker -all_load：不执行Dead Strip，而是加载全部代码；
+//-Xlinker -ObjC：加载全部OC相关代码(包括分类)，其他的正常剥离；
+//-Xlinker -force_load： 指定哪些静态库不执行Dead Strip；
+STATICLIBRARY_PATH=${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/StaticLibrary.framework/StaticLibrary
+
+OTHER_LDFLAGS=-Xlinker -force_load ${STATICLIBRARY_PATH}

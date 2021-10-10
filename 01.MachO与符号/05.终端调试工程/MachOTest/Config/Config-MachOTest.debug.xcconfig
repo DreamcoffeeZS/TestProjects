@@ -1,0 +1,25 @@
+//
+//  Config-TestProject.debug.xcconfig
+//  TestProject
+//
+//  Created by zhoushuai on 2021/9/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+//DEBUG_URL = www.debug.com
+
+//MACHO_PATH：Mach-O文件路径，即可执行文件路径，这里用到了环境变量来表示具体路径
+//TTY = 终端位置标识
+//CMD：运行命令
+//CMD_FLAG = 命令参数
+
+MACHO_PATH = ${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/${PRODUCT_NAME}
+TTY = /dev/ttys000
+CMD = nm
+CMD_FLAG = -pa ${MACHO_PATH}
+
+
+

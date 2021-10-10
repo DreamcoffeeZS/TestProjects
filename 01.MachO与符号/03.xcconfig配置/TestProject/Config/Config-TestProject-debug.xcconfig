@@ -1,0 +1,17 @@
+//
+//  Config-TestProject-debug.xcconfig
+//  TestProject
+//
+//  Created by zhoushuai on 2021/9/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"
+
+A = /
+HOST_URL = http:${A}/1234
+
+//在build settings里搜索查看Other Linker Flags，发现配置已经被成功修改，编译此时会报错，因为还未导入库
+OTHER_LDFLAGS = $(inherited) -framework "AFNetworking"

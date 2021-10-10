@@ -1,0 +1,44 @@
+# Path: /Users/zhoushuai/Library/Developer/Xcode/DerivedData/MachOTest-hcqtupgxwstxbeepekxuldktcger/Build/Products/Debug/MachOTest
+# Arch: x86_64
+# Object files:
+[  0] linker synthesized
+[  1] /Users/zhoushuai/Library/Developer/Xcode/DerivedData/MachOTest-hcqtupgxwstxbeepekxuldktcger/Build/Intermediates.noindex/MachOTest.build/Debug/MachOTest.build/Objects-normal/x86_64/TestObject.o
+[  2] /Users/zhoushuai/Library/Developer/Xcode/DerivedData/MachOTest-hcqtupgxwstxbeepekxuldktcger/Build/Intermediates.noindex/MachOTest.build/Debug/MachOTest.build/Objects-normal/x86_64/main.o
+[  3] /Applications/Xcode13.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks//Foundation.framework/Foundation.tbd
+# Sections:
+# Address	Size    	Segment	Section
+0x100003F50	0x00000034	__TEXT	__text
+0x100003F84	0x00000006	__TEXT	__stubs
+0x100003F8C	0x0000001A	__TEXT	__stub_helper
+0x100003FA6	0x0000000B	__TEXT	__objc_classname
+0x100003FB1	0x00000003	__TEXT	__cstring
+0x100003FB4	0x00000048	__TEXT	__unwind_info
+0x100004000	0x00000008	__DATA_CONST	__got
+0x100004008	0x00000020	__DATA_CONST	__cfstring
+0x100004028	0x00000008	__DATA_CONST	__objc_classlist
+0x100004030	0x00000008	__DATA_CONST	__objc_imageinfo
+0x100008000	0x00000008	__DATA	__la_symbol_ptr
+0x100008008	0x00000090	__DATA	__objc_const
+0x100008098	0x00000050	__DATA	__objc_data
+0x1000080E8	0x00000010	__DATA	__data
+# Symbols:
+# Address	Size    	File  Name
+0x100003F50	0x00000034	[  2] _main
+0x100003F84	0x00000006	[  3] _NSLog
+0x100003F8C	0x00000010	[  0] helper helper
+0x100003F9C	0x0000000A	[  3] _NSLog
+0x100003FA6	0x0000000B	[  1] literal string: TestObject
+0x100003FB1	0x00000003	[  2] literal string: %d
+0x100003FB4	0x00000048	[  0] compact unwind info
+0x100004000	0x00000008	[  0] non-lazy-pointer-to-local: dyld_stub_binder
+0x100004008	0x00000020	[  2] CFString
+0x100004028	0x00000008	[  1] objc-cat-list
+0x100004030	0x00000008	[  0] objc image info
+0x100008000	0x00000008	[  3] _NSLog
+0x100008008	0x00000048	[  1] __OBJC_METACLASS_RO_$_TestObject
+0x100008050	0x00000048	[  1] __OBJC_CLASS_RO_$_TestObject
+0x100008098	0x00000028	[  1] _OBJC_METACLASS_$_TestObject
+0x1000080C0	0x00000028	[  1] _OBJC_CLASS_$_TestObject
+0x1000080E8	0x00000008	[  0] __dyld_private
+0x1000080F0	0x00000004	[  2] _global_init_value
+0x1000080F4	0x00000004	[  2] _static_init_value

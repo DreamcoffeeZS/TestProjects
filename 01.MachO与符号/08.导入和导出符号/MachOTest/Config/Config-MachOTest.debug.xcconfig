@@ -1,0 +1,55 @@
+//
+//  Config-TestProject.debug.xcconfig
+//  TestProject
+//
+//  Created by zhoushuai on 2021/9/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+//DEBUG_URL = www.debug.com
+
+//MACHO_PATH：Mach-O文件路径，即可执行文件路径，这里用到了环境变量来表示具体路径
+//TTY = 终端位置标识
+//CMD：运行命令
+//CMD_FLAG = 命令参数
+
+
+MACH_PATH = ${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/${PRODUCT_NAME}
+TTY = /dev/ttys000
+
+//生成Mach-O信息文件
+//OTHER_LDFLAGS =$(inherited) -Xlinker -S -Xlinker -map -Xlinker ${SRCROOT}/MachOTest_Symbol.text
+
+//隐藏导出符号
+//OTHER_LDFLAGS =$(inherited) -Xlinker -unexported_symbol -Xlinker _OBJC_METACLASS_$_TestObject
+//OTHER_LDFLAGS =$(inherited) -Xlinker -unexported_symbol -Xlinker _OBJC_CLASS_$_TestObject
+
+//测试弱引用符号
+//OTHER_LDFLAGS =$(inherited) -Xlinker -U -Xlinker _weak_import_function
+
+//重新导出符号
+//OTHER_LDFLAGS = $(inherited) -Xlinker -alias -Xlinker _NSLog -Xlinker ZS_NSLog
+
+
+// 查看Header（${MACH_PATH}表示Mach-O文件位置）
+//CMD = objdump --macho --private-header ${MACH_PATH}
+
+// 查看Header 和 Load commands
+//CMD = objdump --macho --private-headers ${MACH_PATH}
+
+// 查看__TEXT
+//CMD = objdump --macho -d ${MACH_PATH}
+
+// 查看符号表
+//CMD = objdump --macho --syms ${MACH_PATH}
+CMD = objdump --macho --syms ${MACH_PATH}
+
+
+// 查看导出符号
+//CMD = objdump --macho --exports-trie ${MACH_PATH}
+
+// 查看间接符号表
+//CMD = objdump --macho --indirect-symbols ${MACH_PATH}

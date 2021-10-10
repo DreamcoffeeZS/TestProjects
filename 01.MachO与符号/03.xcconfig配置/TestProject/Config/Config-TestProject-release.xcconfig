@@ -1,0 +1,17 @@
+//
+//  Config-TestProject-release.xcconfig
+//  TestProject
+//
+//  Created by zhoushuai on 2021/9/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+#include "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"
+
+A = /
+HOST_URL = http:${A}/5678
+
+
