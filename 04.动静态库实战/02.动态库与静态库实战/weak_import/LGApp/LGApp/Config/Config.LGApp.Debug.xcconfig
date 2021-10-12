@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) ${SRCROOT}
+HEADER_SEARCH_PATHS = $(inherited) '${SRCROOT}/SYTimer.framework/Headers' '${SRCROOT}/LGFramework.framework/Headers'
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' '@executable_path/../../Frameworks'
+
+// weak：允许该库在运行时消失
+OTHER_LDFLAGS = $(inherited) -weak_framework SYTimer

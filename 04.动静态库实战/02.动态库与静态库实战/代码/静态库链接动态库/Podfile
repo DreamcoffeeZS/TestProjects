@@ -1,0 +1,21 @@
+
+platform :ios, '14.1'
+
+
+target :'LGNetworkManager' do
+  use_frameworks!
+  # 静态库、动态库
+  # 指定需要被编译成static_framework的库
+  $static_framework = ['AFNetworking']
+  
+  pre_install do |installer|
+  installer.pod_targets.each do |pod|
+        if $static_framework.include?(pod.name)
+            def pod.build_type;
+              Pod::Target::BuildType.static_framework
+            end
+        end
+    end
+  end
+  pod 'SDWebImage'
+end

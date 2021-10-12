@@ -1,0 +1,10 @@
+
+
+platform :ios, '14.1'
+
+
+target :'LGNetworkManager' do
+  # use_frameworks!
+  # 静态库
+  pod 'AFNetworking'
+end

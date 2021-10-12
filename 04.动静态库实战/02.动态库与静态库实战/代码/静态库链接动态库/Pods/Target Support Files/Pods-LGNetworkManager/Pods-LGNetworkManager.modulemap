@@ -1,0 +1,6 @@
+framework module Pods_LGNetworkManager {
+  umbrella header "Pods-LGNetworkManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
