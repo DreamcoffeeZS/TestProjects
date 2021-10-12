@@ -1,9 +1,9 @@
 BCSymbolMap Version: 2.0
-Apple clang version 12.0.0 (clang-1200.0.32.28)
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk
-iPhoneOS14.3.sdk
-/Users/ws/Library/Developer/Xcode/DerivedData/SYTimer-dlhmwhgstsltzjagcfkxhqdcireb/Build/Intermediates.noindex/ArchiveIntermediates/SYTimer/IntermediateBuildFilesPath/SYTimer.build/Release-iphoneos/SYTimer.build/DerivedSources/SYTimer_vers.c
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
+iPhoneOS15.0.sdk
+/Users/zhoushuai/Library/Developer/Xcode/DerivedData/SYTimer-djusvrjvvueqlnefrvriocrjeoio/Build/Intermediates.noindex/ArchiveIntermediates/SYTimer/IntermediateBuildFilesPath/SYTimer.build/Release-iphoneos/SYTimer.build/DerivedSources/SYTimer_vers.c
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer
 -[SYTimerBase(Private) _augmentFireInterval:]
 -[SYTimerBase(Private) _augmentRepeatInterval:]
 -[SYTimerBase(Private) _startRepeating:]
@@ -54,28 +54,31 @@ _OBJC_CLASSLIST_REFERENCES_$_.48
 _OBJC_SELECTOR_REFERENCES_.50
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SYTimerBase_$_Private
 __OBJC_$_CATEGORY_SYTimerBase_$_Private
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYTimerBase+Private.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYTimerBase+Private.mm
 Source/Private/SYTimerBase+Private.mm
+operator""_s
+Source/Private/SYSeconds.h
+Seconds
 operator<
 Source/Private/SYMonotonicTime.h
 max<SY::Seconds>
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm
-max<SY::Seconds, std::__1::__less<SY::Seconds, SY::Seconds> >
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/algorithm
+max<SY::Seconds, std::__less<SY::Seconds> >
 operator()
-Source/Private/SYSeconds.h
 operator-
 operator bool
 operator++
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/atomic
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/atomic
 fetch_add
-__cxx_atomic_fetch_add<unsigned long>
+__cxx_atomic_fetch_add<unsigned int>
 operator!=
 isnan
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/math.h
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/math.h
 __libcpp_isnan<double>
-__inline_isnand
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/include/math.h
 operator+
+MonotonicTime
+nan
+fromRawSeconds
 operator+=
 value
 -[SYRunLoopTimerBase(Private) _startOneShot:]
@@ -93,7 +96,7 @@ _OBJC_IVAR_$_SYRunLoopTimerBase._runLoop
 _OBJC_IVAR_$_SYRunLoopTimerBase._runLoopMode
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SYRunLoopTimerBase_$_Private
 __OBJC_$_CATEGORY_SYRunLoopTimerBase_$_Private
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYRunLoopTimer+Private.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYRunLoopTimer+Private.mm
 Source/Private/SYRunLoopTimer+Private.mm
 timerFired
 -[SYThreadSpecificVariable initWithValue:]
@@ -129,14 +132,14 @@ __OBJC_$_INSTANCE_VARIABLES_SYThreadSpecificData
 __OBJC_$_PROP_LIST_SYThreadSpecificData
 __OBJC_CLASS_RO_$_SYThreadSpecificData
 _OBJC_SELECTOR_REFERENCES_.42
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYThreadSpecificVariable.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYThreadSpecificVariable.mm
 Source/SYThreadSpecificVariable.mm
 destroy
 -[SYMainThreadSharedTimer initWithRunLoopMode:]
 +[SYMainThreadSharedTimer singletonWithRunLoopMode:]
 ___52+[SYMainThreadSharedTimer singletonWithRunLoopMode:]_block_invoke
-___copy_helper_block_ea8_
-___destroy_helper_block_ea8_
+___copy_helper_block_ea4_
+___destroy_helper_block_ea4_
 -[SYMainThreadSharedTimer invalidate]
 -[SYMainThreadSharedTimer setFireInterval:]
 -[SYMainThreadSharedTimer setFiredFunction:]
@@ -148,7 +151,7 @@ ____ZL26applicationDidBecomeActiveP22__CFNotificationCenterPvPK10__CFStringPKvPK
 __ZZ52+[SYMainThreadSharedTimer singletonWithRunLoopMode:]E9onceToken
 __ZZ52+[SYMainThreadSharedTimer singletonWithRunLoopMode:]E13timerDefault_
 __ZZ52+[SYMainThreadSharedTimer singletonWithRunLoopMode:]E12timerCommon_
-___block_descriptor_40_ea8__e5_v8?0l
+___block_descriptor_24_ea4__e5_v4?0l
 __OBJC_$_CLASS_METHODS_SYMainThreadSharedTimer
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SYShareTimer
 __OBJC_$_PROTOCOL_METHOD_TYPES_SYShareTimer
@@ -164,33 +167,34 @@ __OBJC_$_INSTANCE_VARIABLES_SYMainThreadSharedTimer
 __OBJC_CLASS_RO_$_SYMainThreadSharedTimer
 _OBJC_SELECTOR_REFERENCES_.23
 __ZZL18setupPowerObservervE36registeredForApplicationNotification
-___block_descriptor_32_e5_v8?0l
+___block_descriptor_20_e5_v4?0l
 ___block_literal_global
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYMainThreadSharedTimer.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYMainThreadSharedTimer.mm
 ___ZL26applicationDidBecomeActiveP22__CFNotificationCenterPvPK10__CFStringPKvPK14__CFDictionary_block_invoke
 Source/SYMainThreadSharedTimer.mm
 restartSharedTimer
 applicationDidBecomeActive
 setupPowerObserver
-__destroy_helper_block_ea8_
-__copy_helper_block_ea8_
+__destroy_helper_block_ea4_
+__copy_helper_block_ea4_
 __52+[SYMainThreadSharedTimer singletonWithRunLoopMode:]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/include/dispatch/once.h
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYSeconds.mm
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/dispatch/once.h
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYSeconds.mm
 sleep
 Source/Private/SYSeconds.mm
 ~unique_lock
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__mutex_base
-wait_until<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1, 1000000> > >
-__safe_nanosecond_cast<long long, std::__1::ratio<1, 1000000> >
-operator<=<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1, 1000000> >, std::__1::chrono::duration<long long, std::__1::ratio<1, 1000000> > >
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/chrono
-operator<<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1, 1000000> >, std::__1::chrono::duration<long long, std::__1::ratio<1, 1000000> > >
-operator<<long long, std::__1::ratio<1, 1000000>, long long, std::__1::ratio<1, 1000000> >
-operator+<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1, 1000000> >, long long, std::__1::ratio<1, 1> >
-operator+<long long, std::__1::ratio<1, 1000000>, long long, std::__1::ratio<1, 1> >
-duration<long long, std::__1::ratio<1, 1> >
-duration_cast<std::__1::chrono::duration<long long, std::__1::ratio<1, 1000000> >, long long, std::__1::ratio<1, 1> >
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/__mutex_base
+wait_until<std::chrono::system_clock, std::chrono::duration<long long, std::ratio<1, 1000000> > >
+__safe_nanosecond_cast<long long, std::ratio<1, 1000000> >
+operator<=<std::chrono::system_clock, std::chrono::duration<long long, std::ratio<1, 1000000> >, std::chrono::duration<long long, std::ratio<1, 1000000> > >
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/chrono
+operator<<std::chrono::system_clock, std::chrono::duration<long long, std::ratio<1, 1000000> >, std::chrono::duration<long long, std::ratio<1, 1000000> > >
+operator<<long long, std::ratio<1, 1000000>, long long, std::ratio<1, 1000000> >
+time_since_epoch
+operator+<std::chrono::system_clock, std::chrono::duration<long long, std::ratio<1, 1000000> >, long long, std::ratio<1, 1> >
+operator+<long long, std::ratio<1, 1000000>, long long, std::ratio<1, 1> >
+duration<long long, std::ratio<1, 1> >
+duration_cast<std::chrono::duration<long long, std::ratio<1, 1000000> >, long long, std::ratio<1, 1> >
 unique_lock
 condition_variable
 mutex
@@ -226,9 +230,8 @@ __OBJC_$_INSTANCE_METHODS_SYHeapTimerItem
 __OBJC_$_INSTANCE_VARIABLES_SYHeapTimerItem
 __OBJC_$_PROP_LIST_SYHeapTimerItem
 __OBJC_CLASS_RO_$_SYHeapTimerItem
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYHeapTimerItem.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYHeapTimerItem.mm
 Source/Private/SYHeapTimerItem.mm
-MonotonicTime
 Source/Private/SYHeapTimerItem.h
 -[SYThreadTimers initWithRunLoopMode:]
 -[SYThreadTimers init]
@@ -243,11 +246,11 @@ ___33-[SYThreadTimers setSharedTimer:]_block_invoke
 -[SYThreadTimers .cxx_destruct]
 -[SYThreadTimers .cxx_construct]
 _OBJC_CLASSLIST_REFERENCES_$_.7
-___block_descriptor_32_e45_q24?0"SYHeapTimerItem"8"SYHeapTimerItem"16l
+___block_descriptor_20_e44_i12?0"SYHeapTimerItem"4"SYHeapTimerItem"8l
 _OBJC_SELECTOR_REFERENCES_.9
 _OBJC_SELECTOR_REFERENCES_.11
 _OBJC_CLASSLIST_REFERENCES_$_.16
-___block_descriptor_40_e5_v8?0l
+___block_descriptor_24_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.49
 _OBJC_SELECTOR_REFERENCES_.51
 _OBJC_SELECTOR_REFERENCES_.53
@@ -261,10 +264,11 @@ _OBJC_IVAR_$_SYThreadTimers._pendingSharedTimerFireTime
 _OBJC_IVAR_$_SYThreadTimers._mode
 __OBJC_$_INSTANCE_VARIABLES_SYThreadTimers
 __OBJC_CLASS_RO_$_SYThreadTimers
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYThreadTimers.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYThreadTimers.mm
 Source/SYThreadTimers.mm
 seconds
 operator<=
+llvm.loop.mustprogress
 operator>
 __33-[SYThreadTimers setSharedTimer:]_block_invoke
 __27-[SYThreadTimers timerHeap]_block_invoke
@@ -320,7 +324,7 @@ __ZL13s_mainRunLoop
 __ZZ20+[SYRunLoop current]E13runLoopHolder
 __ZZ20+[SYRunLoop current]E9onceToken
 _OBJC_CLASSLIST_REFERENCES_$_.12
-___block_descriptor_32_e5_8?0l
+___block_descriptor_20_e5_4?0l
 ___block_literal_global.14
 _OBJC_CLASSLIST_REFERENCES_$_.15
 __OBJC_$_CLASS_METHODS_SYRunLoop
@@ -349,41 +353,40 @@ __OBJC_$_INSTANCE_METHODS_SYRunLoopTimer
 __OBJC_$_INSTANCE_VARIABLES_SYRunLoopTimer
 __OBJC_CLASS_RO_$_SYRunLoopTimer
 _OBJC_SELECTOR_REFERENCES_.96
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYRunLoop.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYRunLoop.mm
 _GLOBAL__sub_I_SYRunLoop.mm
 __cxx_global_var_init
-Source/SYRunLoop.mm
 length_error
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stdexcept
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/stdexcept
 __throw_length_error
 push_front
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__split_buffer
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/__split_buffer
+construct<void (^__strong *)(), void (^__strong *const &)(), void>
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/__memory/allocator_traits.h
 construct<void (^__strong *)(), void (^__strong *const &)()>
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory
-__construct<void (^__strong *)(), void (^__strong *const &)()>
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/memory
 ~__split_buffer
 deallocate
 __libcpp_deallocate
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/new
-__do_deallocate_handle_size_align
-__do_deallocate_handle_size
-__do_call
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/new
+__do_deallocate_handle_size<>
+__libcpp_operator_delete<void *>
 swap<void (^__strong **)()>
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/type_traits
-__construct_at_end<std::__1::move_iterator<void (^__strong **)()> >
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/type_traits
+__construct_at_end<std::move_iterator<void (^__strong **)()> >
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/iterator
+construct<void (^__strong *)(), void (^__strong *)(), void>
 construct<void (^__strong *)(), void (^__strong *)()>
-__construct<void (^__strong *)(), void (^__strong *)()>
 _ConstructTransaction
-distance<std::__1::move_iterator<void (^__strong **)()> >
-__distance<std::__1::move_iterator<void (^__strong **)()> >
+distance<std::move_iterator<void (^__strong **)()> >
+__distance<std::move_iterator<void (^__strong **)()> >
 operator-<void (^__strong **)(), void (^__strong **)()>
-move_iterator
 __split_buffer
 allocate
 __libcpp_allocate
+__libcpp_operator_new<unsigned long>
 max<unsigned long>
-max<unsigned long, std::__1::__less<unsigned long, unsigned long> >
+max<unsigned long, std::__less<unsigned long> >
 move_backward<void (^__strong **)(), void (^__strong **)()>
 __move_backward<void (^__strong *)(), void (^__strong *)()>
 __end_cap
@@ -393,15 +396,15 @@ push_back
 move<void (^__strong **)(), void (^__strong **)()>
 __move<void (^__strong *)(), void (^__strong *)()>
 __add_back_capacity
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/deque
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/deque
 clear
 __destruct_at_end
 ~unique_ptr
 reset
 begin
 end
-__compressed_pair<nullptr_t, std::__1::allocator<void (^__strong *)()> &>
-__compressed_pair_elem<std::__1::allocator<void (^__strong *)()> &, void>
+__compressed_pair<nullptr_t, std::allocator<void (^__strong *)()> &>
+__compressed_pair_elem<std::allocator<void (^__strong *)()> &, void>
 __compressed_pair_elem<nullptr_t, void>
 __alloc
 pop_front
@@ -411,19 +414,17 @@ capacity
 size
 __front_spare
 operator==
-destroy<void (^)()>
-__destroy<void (^)()>
-__deque_iterator
+destroy<void (^)(), void>
 empty
 ~__deque_base
-Seconds
+Source/SYRunLoop.mm
 deque
 __deque_base
 ~deque
 ~lock_guard
 lock_guard
+construct<void (^)(), void (^const __strong &)(), void>
 construct<void (^)(), void (^const __strong &)()>
-__construct<void (^)(), void (^const __strong &)()>
 __back_spare
 __capacity
 __20+[SYRunLoop current]_block_invoke_2
@@ -434,24 +435,24 @@ __ZNSt3__1L17__call_once_proxyINS_5tupleIJOZN2SY13MonotonicTime3nowEvE3$_0EEEEEv
 __ZNSt3__1L17__call_once_proxyINS_5tupleIJOZN2SY13MonotonicTime3nowEvE3$_0EEEEEvPv.cold.2
 __ZZN2SY13MonotonicTime3nowEvE12timebaseInfo
 __ZZN2SY13MonotonicTime3nowEvE23initializeTimerOnceFlag
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm
 _ZNSt3__1L17__call_once_proxyINS_5tupleIJOZN2SY13MonotonicTime3nowEvE3$_0EEEEEvPv.cold.2
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/mutex
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/mutex
 _ZNSt3__1L17__call_once_proxyINS_5tupleIJOZN2SY13MonotonicTime3nowEvE3$_0EEEEEvPv.cold.1
-__call_once_proxy<std::__1::tuple<(lambda at /Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45) &&> >
+__call_once_proxy<std::tuple<(lambda at /Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45) &&> >
 __execute<>
-__invoke<(lambda at /Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45)>
+__invoke<(lambda at /Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45)>
 Source/Private/SYCurrentTime.mm
 now
-fromRawSeconds
-call_once<(lambda at /Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45)>
+call_once<(lambda at /Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45)>
 __call_once_param
-tuple<(lambda at /Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45), false, false>
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/tuple
-__tuple_impl<0, (lambda at /Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45) &&, (lambda at /Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45)>
-__tuple_leaf<(lambda at /Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45), void>
+tuple<(lambda at /Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45), false, false>
+/Applications/Xcode13.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/c++/v1/tuple
+__tuple_impl<0, (lambda at /Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45) &&, (lambda at /Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45)>
+__tuple_leaf<(lambda at /Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/Private/SYCurrentTime.mm:32:45), void>
 __libcpp_acquire_load<unsigned long>
 Source/Private/SYWallTime.h
+WallTime
 currentTime
 +[SYTimerGlobalData timerGlobalData]
 ___36+[SYTimerGlobalData timerGlobalData]_block_invoke
@@ -473,7 +474,7 @@ _OBJC_IVAR_$_SYTimerGlobalData._threadTimersDefault
 _OBJC_IVAR_$_SYTimerGlobalData._threadTimersCommon
 __OBJC_$_INSTANCE_VARIABLES_SYTimerGlobalData
 __OBJC_CLASS_RO_$_SYTimerGlobalData
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYTimerGlobalData.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYTimerGlobalData.mm
 Source/SYTimerGlobalData.mm
 __36+[SYTimerGlobalData timerGlobalData]_block_invoke
 -[SYTimerBase nextFireInterval]
@@ -550,7 +551,7 @@ __OBJC_METACLASS_RO_$_SYDeferrableOneShotTimer
 __OBJC_$_INSTANCE_METHODS_SYDeferrableOneShotTimer
 __OBJC_$_INSTANCE_VARIABLES_SYDeferrableOneShotTimer
 __OBJC_CLASS_RO_$_SYDeferrableOneShotTimer
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYTimerBase.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYTimerBase.mm
 Source/SYTimerBase.mm
 -[SYHeap initWithHeapType:usingComparator:]
 -[SYHeap type]
@@ -581,12 +582,12 @@ Source/SYTimerBase.mm
 -[SYHeap checkHeapProperty:]
 -[SYHeap description]
 ___21-[SYHeap description]_block_invoke
-___copy_helper_block_ea8_32s40r
-___destroy_helper_block_ea8_32s40r
+___copy_helper_block_ea4_20s24r
+___destroy_helper_block_ea4_20s24r
 ___21-[SYHeap description]_block_invoke.63
 ___21-[SYHeap description]_block_invoke.80
-___copy_helper_block_ea8_32s40s48s56r
-___destroy_helper_block_ea8_32s40s48s56r
+___copy_helper_block_ea4_20s24s28s32r
+___destroy_helper_block_ea4_20s24s28s32r
 -[SYHeap subtreeWidths:maxLength:]
 -[SYHeap comparator]
 -[SYHeap setComparator:]
@@ -598,13 +599,13 @@ _OBJC_SELECTOR_REFERENCES_.52
 _OBJC_CLASSLIST_REFERENCES_$_.53
 _OBJC_SELECTOR_REFERENCES_.57
 _OBJC_SELECTOR_REFERENCES_.59
-___block_descriptor_48_ea8_32s40r_e15_v32?08Q16^B24l
-___block_descriptor_48_ea8_32s40r_e25_v32?0"NSString"8Q16^B24l
+___block_descriptor_28_ea4_20s24r_e14_v16?04I8^c12l
+___block_descriptor_28_ea4_20s24r_e24_v16?0"NSString"4I8^c12l
 _OBJC_CLASSLIST_REFERENCES_$_.69
 _OBJC_SELECTOR_REFERENCES_.73
 _OBJC_SELECTOR_REFERENCES_.75
 _OBJC_SELECTOR_REFERENCES_.79
-___block_descriptor_64_ea8_32s40s48s56r_e25_v32?0"NSString"8Q16^B24l
+___block_descriptor_36_ea4_20s24s28s32r_e24_v16?0"NSString"4I8^c12l
 __OBJC_METACLASS_RO_$_SYHeap
 __OBJC_$_INSTANCE_METHODS_SYHeap
 _OBJC_IVAR_$_SYHeap._storage
@@ -613,16 +614,22 @@ _OBJC_IVAR_$_SYHeap._comparator
 __OBJC_$_INSTANCE_VARIABLES_SYHeap
 __OBJC_$_PROP_LIST_SYHeap
 __OBJC_CLASS_RO_$_SYHeap
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYHeap.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYHeap.mm
 Source/SYHeap.mm
-make_tuple<long &, long &>
-__destroy_helper_block_ea8_32s40s48s56r
-__copy_helper_block_ea8_32s40s48s56r
+make_tuple<int &, int &>
+tuple<int &, int &, false, false>
+__tuple_impl<0, 1, int, int, int &, int &>
+__tuple_leaf<int &, void>
+get<1, int, int>
+get
+get<0, int, int>
+__destroy_helper_block_ea4_20s24s28s32r
+__copy_helper_block_ea4_20s24s28s32r
 __21-[SYHeap description]_block_invoke.80
 __21-[SYHeap description]_block_invoke_2
 __21-[SYHeap description]_block_invoke.63
-__destroy_helper_block_ea8_32s40r
-__copy_helper_block_ea8_32s40r
+__destroy_helper_block_ea4_20s24r
+__copy_helper_block_ea4_20s24r
 __21-[SYHeap description]_block_invoke
 -[SYHeapItem initWithItem:]
 -[SYHeapItem compare:]
@@ -645,7 +652,7 @@ ___22-[SYHeapItem itemHeap]_block_invoke
 -[SYHeapItem hasValidHeapPosition]
 -[SYHeapItem dealloc]
 -[SYHeapItem .cxx_destruct]
-___block_descriptor_32_e35_q24?0"SYHeapItem"8"SYHeapItem"16l
+___block_descriptor_20_e34_i12?0"SYHeapItem"4"SYHeapItem"8l
 __OBJC_$_CLASS_METHODS_SYHeapItem
 __OBJC_METACLASS_RO_$_SYHeapItem
 __OBJC_$_INSTANCE_METHODS_SYHeapItem
@@ -654,6 +661,6 @@ _OBJC_IVAR_$_SYHeapItem._tempHeap
 __OBJC_$_INSTANCE_VARIABLES_SYHeapItem
 __OBJC_$_PROP_LIST_SYHeapItem
 __OBJC_CLASS_RO_$_SYHeapItem
-/Users/ws/Desktop/VIP课程/第五节、动态库与静态库实战/上课代码/多架构合并/SYTimer/Source/SYHeapItem.mm
+/Users/zhoushuai/Desktop/TestProjects/04.动静态库实战/01.多架构合并/SYTimer/Source/SYHeapItem.mm
 Source/SYHeapItem.mm
 __22-[SYHeapItem itemHeap]_block_invoke

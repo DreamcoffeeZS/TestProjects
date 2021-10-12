@@ -14,18 +14,18 @@
 		546FBF3C25BEBD3A008BB138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546FBF3B25BEBD3A008BB138 /* Assets.xcassets */; };
 		546FBF3F25BEBD3A008BB138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FBF3D25BEBD3A008BB138 /* LaunchScreen.storyboard */; };
 		546FBF4225BEBD3A008BB138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546FBF4125BEBD3A008BB138 /* main.m */; };
-		546FBF8E25BEF1AD008BB138 /* SYTimer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546FBF8D25BEF1AD008BB138 /* SYTimer.xcframework */; };
-		546FBF8F25BEF1AD008BB138 /* SYTimer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 546FBF8D25BEF1AD008BB138 /* SYTimer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9A3ACD927159C5600FA0E45 /* SYTimer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546FBF8D25BEF1AD008BB138 /* SYTimer.xcframework */; };
+		E9A3ACDA27159C5600FA0E45 /* SYTimer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 546FBF8D25BEF1AD008BB138 /* SYTimer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		546FBF9025BEF1AD008BB138 /* Embed Frameworks */ = {
+		E9A3ACDB27159C5600FA0E45 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				546FBF8F25BEF1AD008BB138 /* SYTimer.xcframework in Embed Frameworks */,
+				E9A3ACDA27159C5600FA0E45 /* SYTimer.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546FBF8E25BEF1AD008BB138 /* SYTimer.xcframework in Frameworks */,
+				E9A3ACD927159C5600FA0E45 /* SYTimer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 				546FBF2825BEBD39008BB138 /* Sources */,
 				546FBF2925BEBD39008BB138 /* Frameworks */,
 				546FBF2A25BEBD39008BB138 /* Resources */,
-				546FBF9025BEF1AD008BB138 /* Embed Frameworks */,
+				E9A3ACDB27159C5600FA0E45 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
