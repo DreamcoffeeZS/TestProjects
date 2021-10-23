@@ -1,6 +1,4 @@
 #import <Foundation/Foundation.h>
-//眼 mudule -> .h
-// .h -> 二进制
 #import "TestExample.h"
 
 int main(){
