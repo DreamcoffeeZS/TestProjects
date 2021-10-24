@@ -1,8 +1,0 @@
-framework module LGNetworkManager {
-  umbrella header "LGNetworkManager.h"
-  
-  export *
-  module * {
-    export *
-  }
-}

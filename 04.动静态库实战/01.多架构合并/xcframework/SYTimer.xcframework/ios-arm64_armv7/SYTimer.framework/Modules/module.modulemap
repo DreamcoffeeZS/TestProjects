@@ -1,8 +1,0 @@
-framework module SYTimer {
-  umbrella header "SYTimer.h"
-  
-  export *
-  module * {
-    export *
-  }
-}
