@@ -1,0 +1,23 @@
+//
+//  Config-ZSApp.debug.xcconfig
+//  ZSApp
+//
+//  Created by zhoushuai on 2021/10/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-ZSApp/Pods-ZSApp.debug.xcconfig"
+
+//-I：指定动态库头文件
+HEADER_SEARCH_PATHS = $(inherited) ${SRCROOT}/ZSTools.framework/Headers
+//-F：指定动态库所在目录
+FRAMEWORK_SEARCH_PATHS = $(inherited) ${SRCROOT}
+LD_RUNPATH_SEARCH_PATHS = $(inherited)
+//-framework：指定需要链接的动态库的名称
+OTHER_LDFLAGS = $(inherited) -framework "ZSTools"
+
+
+// weak：允许该库在运行时消失
+//OTHER_LDFLAGS = $(inherited) -weak_framework SYTimer
