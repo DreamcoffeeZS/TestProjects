@@ -1,6 +1,0 @@
-framework module ZSTools {
-  umbrella header "ZSTools.h"
-
-  export *
-  module * { export * }
-}

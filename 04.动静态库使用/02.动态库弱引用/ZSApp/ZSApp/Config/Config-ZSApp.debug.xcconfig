@@ -10,14 +10,70 @@
 
 #include "Pods/Target Support Files/Pods-ZSApp/Pods-ZSApp.debug.xcconfig"
 
-//-I：指定动态库头文件
-HEADER_SEARCH_PATHS = $(inherited) ${SRCROOT}/ZSTools.framework/Headers
-//-F：指定动态库所在目录
+// -I：指定动态库头文件
+HEADER_SEARCH_PATHS = $(inherited) '${SRCROOT}/ZSTools.framework/Headers'
+// -F：指定动态库所在目录
 FRAMEWORK_SEARCH_PATHS = $(inherited) ${SRCROOT}
-LD_RUNPATH_SEARCH_PATHS = $(inherited)
-//-framework：指定需要链接的动态库的名称
+
+//// 错误的@rpath路径
+//LD_RUNPATH_SEARCH_PATHS = $(inherited)
+//// weak：允许该库在运行时不存在
+//OTHER_LDFLAGS = $(inherited) -Xlinker -weak_framework -Xlinker "ZSTools"
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+// @rpath路径
+LD_RUNPATH_SEARCH_PATHS = $(inherited) ${SRCROOT}
+// -framework：指定需要链接的动态库的名称
 OTHER_LDFLAGS = $(inherited) -framework "ZSTools"
 
 
-// weak：允许该库在运行时消失
-//OTHER_LDFLAGS = $(inherited) -weak_framework SYTimer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

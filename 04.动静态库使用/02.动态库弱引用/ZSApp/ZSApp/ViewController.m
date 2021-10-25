@@ -6,13 +6,11 @@
 //
 
 #import "ViewController.h"
-#import <ZSObject.h>
+#import <ZSTools/ZSObject.h>
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     ZSObject *object = [[ZSObject alloc] init];
-    [object testPrint];
+    NSLog(@"打印结果:%@",object);
 }
-
 @end
