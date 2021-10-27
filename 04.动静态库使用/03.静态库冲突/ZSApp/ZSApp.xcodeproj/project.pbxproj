@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E937D5552729B0D900DFB60A /* Config-ZSApp.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E937D5542729B0D900DFB60A /* Config-ZSApp.debug.xcconfig */; };
 		E974726827250862006B9A29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E974726727250862006B9A29 /* AppDelegate.m */; };
 		E974726E27250862006B9A29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E974726D27250862006B9A29 /* ViewController.m */; };
 		E974727127250862006B9A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E974726F27250862006B9A29 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E937D5542729B0D900DFB60A /* Config-ZSApp.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Config-ZSApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E974726327250862006B9A29 /* ZSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E974726627250862006B9A29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E974726727250862006B9A29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E937D5532729B0D900DFB60A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E937D5542729B0D900DFB60A /* Config-ZSApp.debug.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		E974725A27250862006B9A29 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		E974726527250862006B9A29 /* ZSApp */ = {
 			isa = PBXGroup;
 			children = (
+				E937D5532729B0D900DFB60A /* Config */,
 				E974726627250862006B9A29 /* AppDelegate.h */,
 				E974726727250862006B9A29 /* AppDelegate.m */,
 				E974726C27250862006B9A29 /* ViewController.h */,
@@ -149,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E937D5552729B0D900DFB60A /* Config-ZSApp.debug.xcconfig in Resources */,
 				E974727627250864006B9A29 /* LaunchScreen.storyboard in Resources */,
 				E974727327250864006B9A29 /* Assets.xcassets in Resources */,
 				E974727127250862006B9A29 /* Main.storyboard in Resources */,
@@ -192,6 +204,7 @@
 /* Begin XCBuildConfiguration section */
 		E974727A27250864006B9A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E937D5542729B0D900DFB60A /* Config-ZSApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -241,10 +254,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -294,9 +307,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -304,13 +318,16 @@
 		};
 		E974727D27250864006B9A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E937D5542729B0D900DFB60A /* Config-ZSApp.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = E6ZLHMXBG4;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = ZSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,12 +343,14 @@
 		E974727E27250864006B9A29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = E6ZLHMXBG4;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = ZSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import <ZSTools.h>
 @interface ViewController ()
 
 @end
@@ -15,8 +15,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    ZSTools *tools = [ZSTools new];
+    [tools testPrint:nil];
 }
-
 
 @end
