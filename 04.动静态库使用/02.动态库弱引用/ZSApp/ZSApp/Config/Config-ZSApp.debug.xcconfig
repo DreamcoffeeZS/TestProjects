@@ -15,28 +15,19 @@ HEADER_SEARCH_PATHS = $(inherited) '${SRCROOT}/ZSTools.framework/Headers'
 // -F：指定动态库所在目录
 FRAMEWORK_SEARCH_PATHS = $(inherited) ${SRCROOT}
 
-//// 错误的@rpath路径
-//LD_RUNPATH_SEARCH_PATHS = $(inherited)
-//// weak：允许该库在运行时不存在
-//OTHER_LDFLAGS = $(inherited) -Xlinker -weak_framework -Xlinker "ZSTools"
-//
-//
-
-
-
-
-
-
-
-
-
-
-
-
-// @rpath路径
-LD_RUNPATH_SEARCH_PATHS = $(inherited) ${SRCROOT}
+// 测试正常使用:
+// 为ZSTools指定正确的@rpath路径:${SRCROOT}
+//LD_RUNPATH_SEARCH_PATHS = $(inherited) ${SRCROOT}
 // -framework：指定需要链接的动态库的名称
-OTHER_LDFLAGS = $(inherited) -framework "ZSTools"
+//OTHER_LDFLAGS = $(inherited) -framework "ZSTools"
+
+
+// 测试弱引用:
+// 未给ZSTools指定正确的的@rpath路径
+LD_RUNPATH_SEARCH_PATHS = $(inherited)
+// 使用weak_framework，允许该库在运行时不存在
+OTHER_LDFLAGS = $(inherited) -Xlinker -weak_framework -Xlinker "ZSTools"
+
 
 
 
