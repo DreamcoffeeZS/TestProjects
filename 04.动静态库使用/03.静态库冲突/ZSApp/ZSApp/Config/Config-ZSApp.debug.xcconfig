@@ -9,18 +9,18 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 
-// -I：指定动态库头文件
+// -I<directory> : 在指定目录寻找头文件
 HEADER_SEARCH_PATHS = $(inherited) '${SRCROOT}/ZSTools' '${SRCROOT}/ZSTools2'
-// -F：指定动态库所在目录
-FRAMEWORK_SEARCH_PATHS = $(inherited) '${SRCROOT}/ZSTools' '${SRCROOT}/ZSTools2'
-// -l:链接静态的库名称
-//OHTER_LDFLAGS = $(inherited) -l"ZSTools" -l"ZSTools2"
-
-OHTER_LDFLAGS = $(inherited) -Xlinker -all_load -l"ZSTools" -l"ZSTools2"
+// -F，指定动态库所在目录
+LIBRARY_SEARCH_PATHS = $(inherited) '${SRCROOT}/ZSTools' '${SRCROOT}/ZSTools2'
+// -l<library_name> : 链接静态的库名称
+//OTHER_LDFLAGS = $(inherited)  -Xlinker -l"ZSTools" -l"ZSTools2"
 
 
+//OTHER_LDFLAGS = $(inherited)  -Xlinker -all_load -l"ZSTools" -l"ZSTools2"
 
 
+OTHER_LDFLAGS = $(inherited)  -Xlinker  -ObjC -l"ZSTools" -l"ZSTools2"
 
 
 
