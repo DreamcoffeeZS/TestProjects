@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+workspace '../ZSWorkSpace.xcworkspace'
+target 'ZSFramework' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks! #加上该句，则Pods导入的AF就是动态库
+  pod "AFNetworking"
+end
+
+# 方法2：使用Cocoapods,向主App里也导入AF
+#target 'ZSApp' do
+#  project '../ZSApp/ZSApp.xcodeproj'
+#  use_frameworks!
+##  pod "AFNetworking"
+#end

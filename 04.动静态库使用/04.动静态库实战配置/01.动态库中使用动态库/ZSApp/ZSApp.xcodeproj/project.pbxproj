@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9306152272E11DE00DDC195 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9306151272E11DE00DDC195 /* AppDelegate.m */; };
+		E9306158272E11DE00DDC195 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9306157272E11DE00DDC195 /* ViewController.m */; };
+		E930615B272E11DE00DDC195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9306159272E11DE00DDC195 /* Main.storyboard */; };
+		E930615D272E11E000DDC195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E930615C272E11E000DDC195 /* Assets.xcassets */; };
+		E9306160272E11E000DDC195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E930615E272E11E000DDC195 /* LaunchScreen.storyboard */; };
+		E9306163272E11E000DDC195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9306162272E11E000DDC195 /* main.m */; };
+		E9BB1DBB272E88D30049F509 /* Config-ZSApp.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E9BB1DBA272E88D30049F509 /* Config-ZSApp.debug.xcconfig */; };
+		E9BB1DFD272EEB860049F509 /* ZSAPPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BB1DFC272EEB860049F509 /* ZSAPPObject.m */; };
+		E9BB1E00272EEDD90049F509 /* ZSAPPObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BB1DFB272EEB860049F509 /* ZSAPPObject.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9BB1DDA272E8B5E0049F509 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C30BBB88E50F6AE665A0DBF /* Pods-ZSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSApp.release.xcconfig"; path = "Target Support Files/Pods-ZSApp/Pods-ZSApp.release.xcconfig"; sourceTree = "<group>"; };
+		E930614D272E11DE00DDC195 /* ZSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9306150272E11DE00DDC195 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9306151272E11DE00DDC195 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9306156272E11DE00DDC195 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9306157272E11DE00DDC195 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E930615A272E11DE00DDC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E930615C272E11E000DDC195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E930615F272E11E000DDC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9306161272E11E000DDC195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9306162272E11E000DDC195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9BB1DBA272E88D30049F509 /* Config-ZSApp.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Config-ZSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E9BB1DFB272EEB860049F509 /* ZSAPPObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSAPPObject.h; sourceTree = "<group>"; };
+		E9BB1DFC272EEB860049F509 /* ZSAPPObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSAPPObject.m; sourceTree = "<group>"; };
+		F1D11A220476153F93022D16 /* Pods-ZSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSApp.debug.xcconfig"; path = "Target Support Files/Pods-ZSApp/Pods-ZSApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E930614A272E11DE00DDC195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D37976A1835CAA712C8089C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1D11A220476153F93022D16 /* Pods-ZSApp.debug.xcconfig */,
+				8C30BBB88E50F6AE665A0DBF /* Pods-ZSApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../ZSFramework/Pods;
+			sourceTree = "<group>";
+		};
+		E9306144272E11DE00DDC195 = {
+			isa = PBXGroup;
+			children = (
+				E930614F272E11DE00DDC195 /* ZSApp */,
+				E930614E272E11DE00DDC195 /* Products */,
+				E9BB1D80272E69C10049F509 /* Frameworks */,
+				D37976A1835CAA712C8089C2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E930614E272E11DE00DDC195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E930614D272E11DE00DDC195 /* ZSApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E930614F272E11DE00DDC195 /* ZSApp */ = {
+			isa = PBXGroup;
+			children = (
+				E9BB1DB9272E88D30049F509 /* Config */,
+				E9306150272E11DE00DDC195 /* AppDelegate.h */,
+				E9306151272E11DE00DDC195 /* AppDelegate.m */,
+				E9306156272E11DE00DDC195 /* ViewController.h */,
+				E9306157272E11DE00DDC195 /* ViewController.m */,
+				E9BB1DFB272EEB860049F509 /* ZSAPPObject.h */,
+				E9BB1DFC272EEB860049F509 /* ZSAPPObject.m */,
+				E9306159272E11DE00DDC195 /* Main.storyboard */,
+				E930615C272E11E000DDC195 /* Assets.xcassets */,
+				E930615E272E11E000DDC195 /* LaunchScreen.storyboard */,
+				E9306161272E11E000DDC195 /* Info.plist */,
+				E9306162272E11E000DDC195 /* main.m */,
+			);
+			path = ZSApp;
+			sourceTree = "<group>";
+		};
+		E9BB1D80272E69C10049F509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9BB1DB9272E88D30049F509 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E9BB1DBA272E88D30049F509 /* Config-ZSApp.debug.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9BB1DFF272EEDD10049F509 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BB1E00272EEDD90049F509 /* ZSAPPObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E930614C272E11DE00DDC195 /* ZSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9306166272E11E000DDC195 /* Build configuration list for PBXNativeTarget "ZSApp" */;
+			buildPhases = (
+				E9BB1DFF272EEDD10049F509 /* Headers */,
+				E9306149272E11DE00DDC195 /* Sources */,
+				E930614A272E11DE00DDC195 /* Frameworks */,
+				E930614B272E11DE00DDC195 /* Resources */,
+				E9BB1DDA272E8B5E0049F509 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZSApp;
+			productName = ZSApp;
+			productReference = E930614D272E11DE00DDC195 /* ZSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9306145272E11DE00DDC195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					E930614C272E11DE00DDC195 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = E9306148272E11DE00DDC195 /* Build configuration list for PBXProject "ZSApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9306144272E11DE00DDC195;
+			productRefGroup = E930614E272E11DE00DDC195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E930614C272E11DE00DDC195 /* ZSApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E930614B272E11DE00DDC195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BB1DBB272E88D30049F509 /* Config-ZSApp.debug.xcconfig in Resources */,
+				E9306160272E11E000DDC195 /* LaunchScreen.storyboard in Resources */,
+				E930615D272E11E000DDC195 /* Assets.xcassets in Resources */,
+				E930615B272E11DE00DDC195 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9306149272E11DE00DDC195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9306158272E11DE00DDC195 /* ViewController.m in Sources */,
+				E9BB1DFD272EEB860049F509 /* ZSAPPObject.m in Sources */,
+				E9306152272E11DE00DDC195 /* AppDelegate.m in Sources */,
+				E9306163272E11E000DDC195 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9306159272E11DE00DDC195 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E930615A272E11DE00DDC195 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E930615E272E11E000DDC195 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E930615F272E11E000DDC195 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9306164272E11E000DDC195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9BB1DBA272E88D30049F509 /* Config-ZSApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9306165272E11E000DDC195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9306167272E11E000DDC195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9BB1DBA272E88D30049F509 /* Config-ZSApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = E6ZLHMXBG4;
+				INFOPLIST_FILE = ZSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhoushuai.ZSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9306168272E11E000DDC195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C30BBB88E50F6AE665A0DBF /* Pods-ZSApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = E6ZLHMXBG4;
+				INFOPLIST_FILE = ZSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhoushuai.ZSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9306148272E11DE00DDC195 /* Build configuration list for PBXProject "ZSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9306164272E11E000DDC195 /* Debug */,
+				E9306165272E11E000DDC195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9306166272E11E000DDC195 /* Build configuration list for PBXNativeTarget "ZSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9306167272E11E000DDC195 /* Debug */,
+				E9306168272E11E000DDC195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9306145272E11DE00DDC195 /* Project object */;
+}

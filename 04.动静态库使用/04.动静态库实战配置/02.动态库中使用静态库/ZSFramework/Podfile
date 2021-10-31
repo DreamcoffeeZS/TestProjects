@@ -1,0 +1,7 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'ZSFramework' do
+  #use_frameworks! 使用静态库
+  pod "AFNetworking"
+end

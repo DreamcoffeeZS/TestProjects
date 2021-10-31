@@ -1,0 +1,25 @@
+//
+//  Config-ZSFramework.debug.xcconfig
+//  ZSFramework
+//
+//  Created by zhoushuai on 2021/10/31.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-ZSFramework/Pods-ZSFramework.debug.xcconfig"
+
+// 方法1：通过动态库ZSFramework的配置文件，为其内部使用的AF提供@rpath路径
+LD_RUNPATH_SEARCH_PATHS = $(inherited) ${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking
+
+//动态库A的配置文件中，设置导出动态库B的符号
+//OTHER_LDFLAGS=-Xlinker -reexport_framework -Xlinker AFNetworking ${inherited}
+
+//反响依赖：提供ZSApp的Header
+HEADER_SEARCH_PATHS = $(inherited) "${SRCROOT}/../ZSApp/ZSApp"
+//反响依赖：在编译期间遇到_OBJC_CLASS_$_ZSAPPObject符号，不报符号未定义的错误
+OTHER_LDFLAGS =  -Xlinker -U -Xlinker  _OBJC_CLASS_$_ZSAPPObject -Xlinker -reexport_framework -Xlinker AFNetworking $(inherited)
+
+// 方法3：使用脚本，将AF拷贝到App的Frameworks/目录下
+//SCRIPT_DIR = ${SRCROOT}/Pods-ZSApp-frameworks.sh

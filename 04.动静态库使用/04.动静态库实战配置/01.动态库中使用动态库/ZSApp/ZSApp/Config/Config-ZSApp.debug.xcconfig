@@ -1,0 +1,34 @@
+//
+//  Config-ZSApp.debug.xcconfig
+//  ZSApp
+//
+//  Created by zhoushuai on 2021/10/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// 
+ 
+//主App的配置文件中，设置动态库B的路径
+HEADER_SEARCH_PATHS= ${inherited} "${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AFNetworking/AFNetworking.framework/Headers"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AFNetworking"
+LD_RUNPATH_SEARCH_PATHS ="${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AFNetworking"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

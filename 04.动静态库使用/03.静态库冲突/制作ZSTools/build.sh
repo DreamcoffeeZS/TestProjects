@@ -1,7 +1,7 @@
 SDK_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
 LANGUAGE=objective-c
 TAREGT=x86_64-apple-darwin
-#修改支持的架构：https://lvv.me/blog/posts/2021/05/19_clang_cross_build/
+#支持的架构可参考：https://lvv.me/blog/posts/2021/05/19_clang_cross_build/
 
 TEST_NAME=Test
 HEAD_PATH=./ZSTools
@@ -22,7 +22,6 @@ clang \
 -c ${LIBRARY_NAME}.m -o ${LIBRARY_NAME}.o
 
 echo "---步骤3:封装静态库文件"
-#这里没有手动改名，而是使用了ar命令封装静态库
 ar -rc lib${LIBRARY_NAME}.a ${LIBRARY_NAME}.o
 
 echo "---步骤4:退出ZSTools"
