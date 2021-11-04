@@ -7,7 +7,8 @@
 
 #import "ViewController.h"
 #import <ZSFramework/ZSFramework.h>
-#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking.h>
+
 
 @implementation ViewController
 

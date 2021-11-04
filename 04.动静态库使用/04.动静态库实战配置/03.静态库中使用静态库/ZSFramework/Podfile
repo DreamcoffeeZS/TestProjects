@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+workspace '../ZSWorkspace.xcworkspace'
+target 'ZSFramework' do
+  #use_frameworks! # 使用静态库
+  pod "AFNetworking"
+end
+
+
+target 'ZSApp' do
+  project '../ZSApp/ZSApp.xcodeproj'
+  #use_frameworks! # 使用静态库
+
+  pod 'AFNetworking'
+
+end

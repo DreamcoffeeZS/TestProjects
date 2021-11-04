@@ -1,12 +1,5 @@
-//
-//  Config-ZSFramework.debug.xcconfig
-//  ZSFramework
-//
-//  Created by zhoushuai on 2021/10/31.
-//
-
-// Configuration settings file format documentation can be found at:
-// https://help.apple.com/xcode/#/dev745c5c974
+ 
 
 #include "Pods/Target Support Files/Pods-ZSFramework/Pods-ZSFramework.debug.xcconfig"
 
+OTHER_LDFLAGS =  -Xlinker -hidden-l"AFNetworking" $(inherited)

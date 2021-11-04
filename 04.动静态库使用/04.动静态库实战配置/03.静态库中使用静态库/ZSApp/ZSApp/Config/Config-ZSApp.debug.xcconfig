@@ -1,0 +1,6 @@
+
+
+#include "../../../ZSFramework/Pods/Target Support Files/Pods-ZSApp/Pods-ZSApp.debug.xcconfig"
+
+//LIBRARY_SEARCH_PATHS = $(inherited) "${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AFNetworking"
+//OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking"
