@@ -1,0 +1,15 @@
+/* module.modulemap */
+
+module A {
+  header "A.h"
+}
+
+module B {
+  header "B.h"
+  export A
+}
+
+
+
+
+
