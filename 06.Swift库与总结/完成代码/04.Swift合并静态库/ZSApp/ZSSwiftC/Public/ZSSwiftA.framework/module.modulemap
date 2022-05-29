@@ -1,0 +1,11 @@
+framework module ZSSwiftA {
+  umbrella header "ZSSwiftA.h"
+
+  export *
+  module * { export * }
+}
+
+module ZSSwiftA.Swift {
+    header "ZSSwiftA-Swift.h"
+    requires objc
+}

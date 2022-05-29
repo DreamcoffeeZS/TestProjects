@@ -1,0 +1,21 @@
+//
+//  Config-ZSApp.debug.xcconfig
+//  ZSApp
+//
+//  Created by zhoushuai on 2022/5/29.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// 配置1：Headers路径
+HEADER_SEARCH_PATHS = $(inherited) '${SRCROOT}/ZSSwiftC/Public/ZSSwiftA.framework/Headers' '${SRCROOT}/ZSSwiftC/Public/ZSSwiftB.framework/Headers'
+
+// 配置2：在OC文件中使用合并后的静态库，需要进行如下配置
+// OTHER_CFLAGS：传递给用来编译C或者OC的编译器，当前就是clang
+// -fmodule-map-file：需要加载的modulemap文件路径
+OTHER_CFLAGS = $(inherited) '-fmodule-map-file=${SRCROOT}/ZSSwiftC/Public/ZSSwiftA.framework/module.modulemap' '-fmodule-map-file=${SRCROOT}/ZSSwiftC/Public/ZSSwiftB.framework/module.modulemap'
+
+// 配置2：在Swift文件中使用合并后的静态库，需要进行如下配置
+// SWIFT_INCLUDE_PATHS: 传递给SwiftC编译器，告诉他去下面的路径中查找module
+SWIFT_INCLUDE_PATHS = $(inherited) '${SRCROOT}/ZSSwiftC/Public/ZSSwiftA.framework' '${SRCROOT}/ZSSwiftC/Public/ZSSwiftB.framework'
