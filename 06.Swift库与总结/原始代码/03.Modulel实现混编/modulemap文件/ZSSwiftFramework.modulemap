@@ -1,0 +1,5 @@
+framework module ZSSwiftFramework {
+    umbrella "Headers"
+    export * //导出Header下所有头文件
+}
+

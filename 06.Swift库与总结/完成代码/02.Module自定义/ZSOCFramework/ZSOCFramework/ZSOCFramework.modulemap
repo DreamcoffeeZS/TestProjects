@@ -1,0 +1,22 @@
+/* module.modulemap */
+
+framework module ZSOCFramework {
+
+	// 以下两行代码，效果相同
+	// umbrella "Headers"
+	umbrella "ZSOCFramework.h"
+
+	explicit module ZSTeacher {
+		header "ZSTeacher.h"
+		export *
+	}
+
+	explicit module ZSStudent {
+		header "ZSStudent.h"
+		export *
+	}
+}
+
+
+
+

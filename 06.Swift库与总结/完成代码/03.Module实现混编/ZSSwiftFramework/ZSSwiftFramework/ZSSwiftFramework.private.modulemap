@@ -1,0 +1,12 @@
+/* module.modulemap */
+
+framework module ZSSwiftFramework_Private {
+    module ZSOCStudent {
+        header "ZSOCStudent.h"
+        export *
+    }
+}
+
+
+
+
