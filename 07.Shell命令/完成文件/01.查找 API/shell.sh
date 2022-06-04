@@ -25,5 +25,5 @@ echo '3.4.错误方法：使用双引号和转义字符，\被识别为普通字
 # grep: ../01.查找\ API/test.m: No such file or directory
 
 echo '3.5.错误方法：使用单引号和转义字符，\被识别为普通字符'
-grep weak --color=auto -- '../01.查找\ API/test.m'
+# grep weak --color=auto -- '../01.查找\ API/test.m'
 # grep: ../01.查找\ API/test.m: No such file or directory
